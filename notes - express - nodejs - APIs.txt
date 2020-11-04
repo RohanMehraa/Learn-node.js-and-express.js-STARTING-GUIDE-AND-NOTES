@@ -178,11 +178,11 @@ req.body.firstName; inside the post function. Please note that the form should h
 
 
     var options = {
-        url: "https://us17.api.mailchimp.com/3.0/lists/73e497dd39",
+        url: "https://usX.api.mailchimp.com/3.0/lists/<AUDIENCE_ID>",   //here X refers to the server no. provided by the mailchimp, and Audience ID refers to the ID of the Audience to which you're going to post your requests.
         method: "POST",
 
         headers: {
-            "Authorization": "Rohan d5b156f4de6b4f3b17de9b59f0a5c7f5-us17"
+            "Authorization": "<NAME> <API_KEY>" //here one can supply any name then after a space enter the API KEY associated with you MailChimp Account
         },
 
         body: jsonData  // here we've used the flatpack json type data to send it to the mailchimp api.
